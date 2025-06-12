@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="color: blue;">JavaScript Tutorial 4</h1>
+
+
+
+
+
+<button onclick="showImage('myView')">My view</button>
+<button onclick="showImage('myHouse')">My house</button>
+<button onclick="showImage('myHobby')">My Hobby</button>
+<button onclick="this.innerHTML = Date()">The time is?</button>
+<button onclick="window.print()">Print page</button>
+
+
+
+
+
+
+
+
+<div style="display: flex; gap: 10px; margin-top: 20px;">
+<img id="myView" src="view.jpg" alt="myView" style="display:none; width:300px;">
+<img id="myHouse" src="house.jpg" alt="myHouse" style="display:none; width:300px;">
+<img id="myHobby" src="https://www.ruparupa.com/blog/wp-content/uploads/2021/03/yuhu.png" alt="myHobby" style="display:none; width:300px;">
+</div>
+
+<script>
+
+function showImage(id) {
+  const image = document.getElementById(id);
+  image.style.display = "block";
+  
+}
+
+</script>
+
+</body>
+</html>
